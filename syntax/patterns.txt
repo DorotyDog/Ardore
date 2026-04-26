@@ -1,0 +1,7 @@
+KW_LET WORD OP_ASSIGN WORD : auto %1 = %3;
+WORD OP_ASSIGN WORD : %0 = %2;
+WORD OP_ASSIGN WORD OP_MATH WORD : %0 = %2 %3 %4;
+KW_PRINT OP_TILDE OP_QUOT WORD OP_QUOT : std::cout << "%3";
+KW_INC : #include <iostream>
+KW_ST : int main() {
+KW_END : return 0; \n}
